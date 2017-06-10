@@ -40,45 +40,55 @@ para lidar com um CRUD semelhante as APIs convencionais de banco de dados.
 ```
 
 #### getObjectByFilter
-**Recebe**
-  Essa função recebe tambem uma chave chamada filter contendo 3 indices
-  *primeiro indice* é o valor único do objeto á ser retornado, por exemplo *ID* \n
-  *segundo indice* pode conter dois valores *id* ou *prop*, onde ID quer dizer para retornar o objeto,e prop diz para retornar uma propriedade do objeto. \n
-  *terceiro indece* refere-se ao nome da propriedade que deseja retornar.caso segundo indice seja *id* deve-se setar esse valor para *null* \n
 
+  Essa função recebe tambem uma chave chamada filter contendo 3 indices
+  *primeiro indice* é o valor único do objeto á ser retornado, por exemplo *ID*
+
+  *segundo indice* pode conter dois valores *id* ou *prop*, onde ID quer dizer para retornar o objeto,e prop diz para retornar uma propriedade do objeto.
+
+  *terceiro indece* refere-se ao nome da propriedade que deseja retornar.caso segundo indice seja *id* deve-se setar esse valor para *null*.
+
+  ```javascript
   var cfg = {key:'*chave do local storage*', typeResponse:'*object ou string*', filter:['*id*','*id ou prop*','*null ou nome da prop*']}
 
 **Exemplo da chamada**
   getObejectByFilter(cfg)
+```
 
 #### saveObeject
-**Recebe**
+
   Essa função recebe tambem uma chave chamada *data* que deve conter os dados a serem persistidos no localstorage e tambem outra chave *create* que deve ser setada para true caso queira criar uma nova chave no localstorage se a mesma não existir.
 
+```javascript
   var cfg = {key:'*chave do local storage*', typeResponse:'*object ou string*', data:{'*objeto*'}, create:'true'}
 
 **Exemplo da chamada**
   saveObeject(cfg)
+```
 
 #### updateObeject
-**Recebe**
+
   Essa função tambem recebe chave *filter* e *data* no entanto no *filter* apenas o primeiro indice é requerido com o *ID* do objeto do localstorage a ser alterado, e o data deve conter o objeto a ser persistido.
 
   **IMPORTANTE** Deve ser enviado o objeto completo pois ele deleta o objeto com esse *ID* e recria novamente persistido o valor contido em *data*.
 
+```javascript
   var cfg = {key:'*chave do local storage*', typeResponse:'*object ou string*', filter:['*ID*', '*null*', '*null*'], data:{*objeto*}}
 
 **Exemplo da chamada**
   updateObeject(cfg)
+```
 
 #### delObeject
-**Recebe**
+
   Essa função recebe *filter* com apenas *primeiro indice* contendo o *ID* do objeto a ser excluído.
 
+```javascript
   var cfg = {key:'*chave do local storage*', typeResponse:'*object ou string*', filter:['*ID*', '*null*', '*null*']}
 
 **Exemplo da chamada**
   delObeject(cfg)
+```
 
 **Erros e retornos das funções**
  - Todoas as funções retornam ou o recurso solicitado ou um objeto contendo uma chave chamada *err*.
