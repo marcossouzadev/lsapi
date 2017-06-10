@@ -42,11 +42,12 @@ para lidar com um CRUD semelhante as APIs convencionais de banco de dados.
 #### getObjectByFilter
 
   Essa função recebe tambem uma chave chamada filter contendo 3 indices
-  *primeiro indice* é o valor único do objeto á ser retornado, por exemplo *ID*
 
-  *segundo indice* pode conter dois valores *id* ou *prop*, onde ID quer dizer para retornar o objeto,e prop diz para retornar uma propriedade do objeto.
+  **Primeiro indice** é o valor único do objeto á ser retornado, por exemplo *ID*
 
-  *terceiro indece* refere-se ao nome da propriedade que deseja retornar.caso segundo indice seja *id* deve-se setar esse valor para *null*.
+  **Segundo indice** pode conter dois valores *id* ou *prop*, onde ID quer dizer para retornar o objeto,e prop diz para retornar uma propriedade do objeto.
+
+  *Terceiro indice** refere-se ao nome da propriedade que deseja retornar.caso segundo indice seja *id* deve-se setar esse valor para *null*.
 
   ```javascript
   var cfg = {key:'*chave do local storage*', typeResponse:'*object ou string*', filter:['*id*','*id ou prop*','*null ou nome da prop*']}
@@ -91,4 +92,5 @@ para lidar com um CRUD semelhante as APIs convencionais de banco de dados.
 ```
 
 **Erros e retornos das funções**
- - Todoas as funções retornam ou o recurso solicitado ou um objeto contendo uma chave chamada *err*.
+ - Todoas as funções retornam ou o recurso solicitado ou um objeto contendo uma chave chamada *err*
+ contendo o erro.
