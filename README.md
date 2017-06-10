@@ -9,15 +9,15 @@ Há 5 funcões básicas que podem ser chamadas passando um objeto de configuraç
 para lidar com um CRUD semelhante as APIs convencionais de banco de dados.
 
 ## Funções do CRUD
-* getObject(cfg)
+* **getObject(cfg)**
   - Retorna todos os objetos de determinada chave no local storage
-* getObjectByFilter(cfg)
+* **getObjectByFilter(cfg)**
   - Retorna um objeto de um array de objetos de determinada chave no local storage
-* saveObject(cfg)
+* **saveObject(cfg)**
   - Insere dados enviados no array de objetos do local storage
-* updateObject(cfg)
+* **updateObject(cfg)**
   - Atualiza determinado objeto no array de objetos do local storage
-* delObject(cfg)
+* **delObject(cfg)**
   - Deleta determinado objeto no array de objetos do local storage
 
 ## Parametros de configurações
@@ -32,11 +32,12 @@ para lidar com um CRUD semelhante as APIs convencionais de banco de dados.
 ## Chamadas de funções
 
 #### getObeject
-**Recebe**
+  ```javascript
   var cfg = {key:'*chave do local storage*', typeResponse:'*object ou string*'}
 
 **Exemplo da chamada**
   getObeject(cfg)
+```
 
 #### getObjectByFilter
 **Recebe**
