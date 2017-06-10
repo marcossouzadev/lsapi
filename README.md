@@ -78,3 +78,8 @@ para lidar com um CRUD semelhante as APIs convencionais de banco de dados.
 
 **Exemplo da chamada**
   delObeject(cfg)
+
+**Erros e retornos das funções**
+ - Todoas as funções retornam ou o recurso solicitado ou um objeto contendo uma chave chamada *err*.
+
+ 
