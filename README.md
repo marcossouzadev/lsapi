@@ -2,16 +2,16 @@
 Um simples manipulador de local storage do HTML5.
 
 ## Vantagens
-Essa api facilita manipilação do locastorage provendo também validações que são necessarias em todas as iterações com localstorage.
+Essa api facilita manipulação do locastorage provendo também validações que são necessarias em todas as iterações com localstorage.
 
 ## Como funciona
 Há 5 funcões básicas que podem ser chamadas passando um objeto de configurações,
 para lidar com um CRUD semelhante as APIs convencionais de banco de dados.
 
 ## Funções do CRUD
-* getObeject(cfg)
+* getObject(cfg)
   - Retorna todos os objetos de determinada chave no local storage
-* getOjectByFilter(cfg)
+* getObjectByFilter(cfg)
   - Retorna um objeto de um array de objetos de determinada chave no local storage
 * saveObject(cfg)
   - Insere dados enviados no array de objetos do local storage
@@ -41,9 +41,9 @@ para lidar com um CRUD semelhante as APIs convencionais de banco de dados.
 #### getObjectByFilter
 **Recebe**
   Essa função recebe tambem uma chave chamada filter contendo 3 indices
-  *primeiro indice* é o valor único do objeto á ser retornado, por exemplo *ID*
-  *segundo indice* pode conter dois valores *id* ou *prop*, onde ID quer dizer para retornar o objeto,e prop diz para retornar uma propriedade do objeto.
-  *terceiro indece* refere-se ao nome da propriedade que deseja retornar.caso segundo indice seja *id* deve-se setar esse valor para *null*
+  *primeiro indice* é o valor único do objeto á ser retornado, por exemplo *ID* \n
+  *segundo indice* pode conter dois valores *id* ou *prop*, onde ID quer dizer para retornar o objeto,e prop diz para retornar uma propriedade do objeto. \n
+  *terceiro indece* refere-se ao nome da propriedade que deseja retornar.caso segundo indice seja *id* deve-se setar esse valor para *null* \n
 
   var cfg = {key:'*chave do local storage*', typeResponse:'*object ou string*', filter:['*id*','*id ou prop*','*null ou nome da prop*']}
 
@@ -81,5 +81,3 @@ para lidar com um CRUD semelhante as APIs convencionais de banco de dados.
 
 **Erros e retornos das funções**
  - Todoas as funções retornam ou o recurso solicitado ou um objeto contendo uma chave chamada *err*.
-
- 
