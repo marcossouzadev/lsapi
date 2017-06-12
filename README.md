@@ -50,7 +50,7 @@ para lidar com um CRUD semelhante as APIs convencionais de banco de dados.
   **Terceiro indice** refere-se ao nome da *propriedade* que deseja retornar.caso segundo indice seja *ID* deve-se setar esse valor para *NULL*.
 
   ```javascript
-  var cfg = {key:'*chave do local storage*', typeResponse:'*object ou string*', filter:['*id*','*id ou prop*','*null ou nome da prop*']}
+  var cfg = {key:'*chave do local storage*', typeResponse:'*object*', filter:['*id*','*id ou prop*','*null ou nome da prop*']}
 
 //Exemplo da chamada
   getObjectByFilter(cfg)
@@ -74,7 +74,7 @@ para lidar com um CRUD semelhante as APIs convencionais de banco de dados.
   **IMPORTANTE** Deve ser enviado o objeto completo pois ele deleta o objeto com esse *ID* e recria novamente persistido o valor contido em *DATA*.
 
 ```javascript
-  var cfg = {key:'*chave do local storage*', typeResponse:'*object ou string*', filter:['*ID*', '*null*', '*null*'], data:{*objeto*}}
+  var cfg = {key:'*chave do local storage*', typeResponse:'*object*', filter:['*ID*', '*null*', '*null*'], data:{*objeto*}}
 
 //Exemplo da chamada
   updateObject(cfg)
@@ -85,7 +85,7 @@ para lidar com um CRUD semelhante as APIs convencionais de banco de dados.
   Essa função recebe *FILTER* com apenas *primeiro indice* contendo o *ID* do objeto a ser excluído.
 
 ```javascript
-  var cfg = {key:'*chave do local storage*', typeResponse:'*object ou string*', filter:['*ID*', '*null*', '*null*']}
+  var cfg = {key:'*chave do local storage*', typeResponse:'*object*', filter:['*ID*', '*null*', '*null*']}
 
 //Exemplo da chamada**
   delObject(cfg)
@@ -96,4 +96,4 @@ para lidar com um CRUD semelhante as APIs convencionais de banco de dados.
 
 
 
-###Todo feedback sobre errors de português ou programação são bem vindos
+### Todo feedback sobre errors de português ou programação são bem vindos
