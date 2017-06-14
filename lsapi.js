@@ -127,7 +127,7 @@ const BuildToken = function(){
 }
 //********** Funções Principais **********************
 
-//Pega todos os item de um obejeto
+//Pega todos os item de um objeto
 const getObject = function(cfg){
   let response
   try {
@@ -171,11 +171,10 @@ const saveObject =  function(cfg){
   let response
   try {
 
-    //const data = localStorage.getItem(cfg.key)
     const execute = Prepare(cfg)
     if(execute.err) throw execute.err
 
-    if(typeof cfg.data != 'object') throw Erros.reqParams
+    if(typeof cfg.data != 'object') throw msg.err.reqParams
 
     cfg.data.id = BuildToken()
     execute.push(cfg.data)
