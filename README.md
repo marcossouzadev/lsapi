@@ -1,6 +1,10 @@
 ## lsapi
 Um simples manipulador de local storage do HTML5.
 
+## Tecnologias usadas
+![HTML5](https://d14nx13ylsx7x8.cloudfront.net/platforms/images/000/000/004/thumb/HTML5_Logo_512.png)
+![Javascript](https://frontendmasters.com/wp-content/themes/frontendmasters/assets/images/workshop/logo-js.png)
+
 ## Vantagens
 Essa api facilita manipulação do locastorage provendo também validações que são necessarias em todas as iterações com localstorage.
 
